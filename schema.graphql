@@ -1,0 +1,22 @@
+# type ExampleEntity @entity {
+#   id: ID!
+#   count: BigInt
+#   newAdminFee: BigInt # uint256
+# }
+
+
+type LoanStartedEntity @entity {  
+  id: ID!
+  # loanId: String!
+  borrower: BigInt
+  lender: BigInt
+  loanPrincipalAmount: BigInt
+  maximumRepaymentAmount: BigInt
+  nftCollateralId: BigInt
+  loanStartTime: BigInt
+  loanDuration: BigInt
+  loanInterestRateForDurationInBasisPoints: BigInt
+  nftCollateralContract: BigInt
+  loanERC20Denomination: BigInt
+  interestIsProRated: Boolean
+}
